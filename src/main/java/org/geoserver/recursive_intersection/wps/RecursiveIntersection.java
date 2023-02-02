@@ -36,7 +36,7 @@ import org.geotools.filter.text.cql2.CQL;
 import org.geotools.filter.text.cql2.CQLException;
 import org.opengis.filter.Filter;
 
-@DescribeProcess(title="riverWPS", description="From a feature collection and a geometry, gets the subset of data from the feature collection that intersects with the given geometry and between the subset of data itself (performs the calculation recursively)")
+@DescribeProcess(title="RecursiveIntersection", description="From a feature collection and a geometry, gets the subset of data from the feature collection that intersects with the given geometry and between the subset of data itself (performs the calculation recursively)")
 public class RecursiveIntersection implements GeoServerProcess {
    
    @DescribeResult(name="result", description="Subset of data from the feature collection that intersects with the given geometry and between the subset of data itself ")
